@@ -9,7 +9,8 @@ int GetRandomNumber(int min, int max)
   return num;
 }
 
-int main() {
+int main()
+{
     srand(time(NULL));
     ofstream out("excel.csv");
     double x[200] = {};
@@ -20,3 +21,4 @@ int main() {
         printf("%f\n", x[i]);
     }
     out.close();
+}
